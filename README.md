@@ -15,3 +15,52 @@ The project is a **Quality Control (QC) Release System** for a sterile manufactu
 
 ### 4. Data Integrity and Audit Log
 - **As a Regulatory Inspector, I need an audit trail of user activities, so that I can verify the integrity of the QC test results and user actions.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Technical Requirements:
+
+1. User Account System:
+   - Store user credentials securely using **SHA-256 hashing with salt**.
+   - Users should be able to log in using their credentials.
+   - Maintain role-based access control (e.g., Administrator, QC Analyst, QA Manager).
+
+2. QC Test System:
+   - Store test results for **Appearance**, **Assay**, **Sterility**, and **Endotoxin**.
+   - Ensure data entry follows **ALCOA principles** (e.g., timestamping, user attribution).
+
+3. Batch Processing:
+   - Allow creation and management of batches, including the tracking of test results.
+   - Implement business logic to approve batches only when all test results are marked as **"Complies"**.
+
+4. Error Handling:
+   - Ensure all stored procedures handle errors gracefully with transactions and rollback mechanisms.
+
+5. Audit Log:
+   - Log all user actions (e.g., data entry, approvals) to ensure traceability and regulatory compliance.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Acceptance Criteria:
+
+1. User Login System:
+   - Users can securely create and log into accounts.
+   - Passwords are stored securely using **SHA-256** with a salt.
+   - Role-based access control works as expected.
+
+2. QC Test Entry:
+   - All 4 QC tests (Appearance, Assay, Sterility, Endotoxin) can be entered for each batch.
+   - Tests are marked as either "Complies" or "Non-compliant."
+   - The system validates and stores the test results with proper error handling.
+
+3. Batch Approval:
+   - A batch can only be approved if all 4 QC tests are completed and marked as "Complies."
+   - If any test is missing or marked as "Non-compliant," the batch cannot be approved.
+
+4. Error Handling:
+   - Any error in stored procedures is handled gracefully with transaction rollback and detailed error messages.
+
+5. Audit Log:
+   - All user actions, including login, test entries, and batch approvals, are logged and can be reviewed.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
