@@ -1,7 +1,7 @@
 # medvet
 The project is a **Quality Control (QC) Release System** for a sterile manufacturing environment. The system handles user authentication, data transcription, batch processing, and QC tests to ensure compliance with both ALCOA principles and Annex 1 of EudraLex guidelines.
 
-##Stakeholder User Stories:
+## Stakeholder User Stories:
 
 ### 1. User Account Management
 - As a QC Analyst, I need to securely log into the system so that I can enter QC test results.
