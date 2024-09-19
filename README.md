@@ -14,7 +14,7 @@ The project is a **Quality Control (QC) Release System** for a sterile manufactu
 - As a QA Manager, I need to ensure all QC test results for a batch comply with regulatory standards before I can approve the batch for release.
 
 ### 4. Data Integrity and Audit Log
-- **As a Regulatory Inspector, I need an audit trail of user activities, so that I can verify the integrity of the QC test results and user actions.
+- As a Regulatory Inspector, I need an audit trail of user activities, so that I can verify the integrity of the QC test results and user actions.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
