@@ -64,3 +64,6 @@ The project is a **Quality Control (QC) Release System** for a sterile manufactu
    - All user actions, including login, test entries, and batch approvals, are logged and can be reviewed.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Database statement:
+The database keeps track of **users**, who can log in, perform actions, and have their activity recorded in an **audit log**. Users can also approve **batches** of products and carry out **quality control tests** on them. Each batch goes through required tests, and users with specific roles (like admin or QC analyst) decide whether to approve or reject the batch based on the results. The system ties **batches** to the **users** who approve them and links the **QC test data** to each batch. Everything users do is logged for transparency and compliance.
